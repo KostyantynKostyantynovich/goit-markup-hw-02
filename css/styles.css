@@ -20,10 +20,69 @@ body{
 
 ul {
     list-style: none;
+    padding-left: 0;
 }
+
+
+
+/* main container */
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* main section */
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+
+.header-content{
+    display: flex;
+    align-items: center;
+}
+
+
+.header-navigation{
+    display: flex;
+    align-items: center;
+}
+
+
+.header-pages{
+    display: flex;
+    margin: 0;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: 93px;
+}
+.header-pages :not(:last-child){
+    margin-right: 50px;
+}
+
+
+
+.header-contact{
+    display: flex;
+    margin-left: auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.header-contact :not(:last-child){
+    margin-right: 50px;
+}
+
+
+
 
 /* header */
 .title{
+    
 font-family: var(--second-fond);
     font-weight: 700;
     font-size: 26px;
@@ -69,9 +128,12 @@ font-family: var(--second-fond);
 /* main */
 .first-block{
     background: var(--first-block-color);
+    text-align: center;
 }
 
 .caption{
+    margin-top: 0;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -89,6 +151,7 @@ font-family: var(--second-fond);
 }
 
 .service{
+    padding: 10px 32px;
     font-family: var(--main-font);
     font-weight: 700;
     font-size: 16px;
@@ -100,6 +163,7 @@ font-family: var(--second-fond);
     color: var(--white-color);
 }
 
+
 /* Переваги */
 
 .invisible-title{
@@ -109,7 +173,27 @@ font-family: var(--second-fond);
     height: 1px;
     margin: -1px;
 }
+
+
+.sub-tit{
+display: flex;
+margin: 0;
+
+}
+
+.sub-info{
+    width: 270px;
+}
+
+.sub-info:not(:last-child){
+    margin-right: 30px;
+}
+
+
 .subtitle{
+    margin: 0;
+    margin-bottom: 10px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -118,6 +202,8 @@ font-family: var(--second-fond);
 }
 
 .desc{
+    margin: 0;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -125,14 +211,30 @@ font-family: var(--second-fond);
     color: var(--text-color);
 }
 
+
+
 /* Робота */
 
 .third-block-title{
+    margin: 0;
+   
+
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
+}
+
+.our-works{
+    display: flex;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+}
+
+.work-image:not(:last-child){
+    margin-right: 30px;
 }
 
 /* Наша команда */
@@ -143,6 +245,9 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .quarter-block-title{
+    margin: 0;
+    margin-bottom: 50px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -150,21 +255,37 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     letter-spacing: 0.03em;
 }
 
+.workers{
+    display: flex;
+}
+
 .box{
+    margin: 0;
     background: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
+.box:not(:last-child){
+    margin-right: 30px;
+}
 
 .name{
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
+
 }
 
 .work{
+    margin: 0;
+    margin-bottom: 30px;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
@@ -216,7 +337,11 @@ color: var(--text-color);
     background-color: var(--first-block-color);
 }
 
-.footer-item{
+.footer-logo{
+    display: inline-block;
+    margin-top: 60px;
+    margin-bottom: 20px;
+
 font-family: var(--second-fond);
 font-weight: 700;
 font-size: 26px;
@@ -230,6 +355,16 @@ text-decoration: none;
     color: var(--white-color);
 }
 
+.transform{
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 62px;
+    padding: 0;
+}
+
+.footer-item:not(:last-child){
+margin-bottom: 9px;
+}
 .footer-addres{
 font-style: normal;
 font-weight: 400;
@@ -245,7 +380,7 @@ text-decoration: none;
 }
 
 
-.footer-contact{
+.footer-contact{  
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
